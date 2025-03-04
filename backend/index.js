@@ -9,7 +9,8 @@ const app = express();
 const port = process.env.PORT || 8080; // Use PORT from .env or default to 8080
 
 // Serve static files (images) from the public/images folder
-app.use("/images", express.static(path.join(__dirname, "public/images")));
+app.use(express.static(path.join(__dirname, "public")));
+
 
 
 // Start Express server
